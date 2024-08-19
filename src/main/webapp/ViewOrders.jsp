@@ -15,7 +15,7 @@
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "shavim");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "tea");
             PreparedStatement ps = con.prepareStatement("SELECT customer_name, tea_type, quantity, total_amount FROM orders WHERE customer_name = ?");
             ps.setString(1, customerName);
             ResultSet rs = ps.executeQuery();
