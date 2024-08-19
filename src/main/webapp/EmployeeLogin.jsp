@@ -16,7 +16,7 @@
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "shavim");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "tea");
             PreparedStatement ps = con.prepareStatement("SELECT * FROM employees WHERE username = ? AND password = ?");
             ps.setString(1, username);
             ps.setString(2, password);
