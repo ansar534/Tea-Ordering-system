@@ -16,7 +16,7 @@
         
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "shavim");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "tea");
             PreparedStatement ps = con.prepareStatement("INSERT INTO tea_types (id, name, price_per_cup) VALUES (?, ?, ?)");
             ps.setString(1, teaId);
             ps.setString(2, teaName);
