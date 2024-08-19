@@ -42,7 +42,7 @@
         // Add the customer's order to the orders table
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "shavim");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/tea_ordering_system", "root", "tea");
             PreparedStatement ps = con.prepareStatement("INSERT INTO orders (customer_name, tea_type, quantity, total_amount) VALUES (?, ?, ?, ?)");
             
             ps.setString(1, customerName);
