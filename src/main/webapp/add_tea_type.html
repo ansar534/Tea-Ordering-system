@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Tea Type</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Add Tea Type</h1>
+    <form action="AddTeaType.jsp" method="post">
+        <label for="teaId">Tea ID:</label>
+        <input type="text" id="teaId" name="teaId" required><br><br>
+        
+        <label for="teaName">Tea Name:</label>
+        <input type="text" id="teaName" name="teaName" required><br><br>
+        
+        <label for="pricePerCup">Price per Cup (INR):</label>
+        <input type="number" id="pricePerCup" name="pricePerCup" min="0.01" step="0.01" required><br><br>
+        
+        <button type="submit">Add Tea Type</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tea Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Tea Ordering System</h1>
+    <p>Place your order:</p>
+    <form action="TeaOrder.jsp" method="post">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+        
+        <label for="teaType1">Tea Type 1:</label>
+        <select id="teaType1" name="teaType1" required>
+            <option value="Green Tea">Green Tea</option>
+            <option value="Black Tea">Black Tea</option>
+            <option value="Oolong Tea">Oolong Tea</option>
+            <!-- Add more options for other tea types -->
+        </select><br><br>
+        
+        <label for="quantity1">Quantity 1:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" required><br><br>
+        
+        <label for="teaType2">Tea Type 2:</label>
+        <select id="teaType2" name="teaType2">
+            <option value="">None</option> <!-- Add an option for no second tea -->
+            <option value="Green Tea">Green Tea</option>
+            <option value="Black Tea">Black Tea</option>
+            <option value="Oolong Tea">Oolong Tea</option>
+            <!-- Add more options for other tea types -->
+        </select><br><br>
+        
+        <label for="quantity2">Quantity 2:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1"><br><br>
+        
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
+
